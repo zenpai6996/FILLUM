@@ -82,8 +82,8 @@ const App = () => {
    }, []);
     
     return (
-        <main>
-            <div className="pattern"/>
+        <main >
+            <div />
             <div className="wrapper">
                 <header className="relative flex flex-col items-center justify-center min-h-screen ">
                 <div className="relative flex items-center justify-center w-full h-40 mb-8">
