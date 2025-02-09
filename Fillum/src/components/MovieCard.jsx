@@ -15,7 +15,7 @@ const MovieCard = ({movie:{title,vote_average,poster_path,release_date,original_
       </div>
       <span className='text-2xl group-hover:text-black transition delay-150 duration-300 ease-in-out '>•</span>
       <p className='lang group-hover:text-black transition delay-150 duration-300 ease-in-out '>{original_language}</p>
-      <span className='text-2xl group-hover:text-black transition delay-150 duration-300 ease-in-out '>‣</span>
+      <span className='text-2xl group-hover:text-black transition delay-150 duration-300 ease-in-out '>•</span>
       <p className='year group-hover:text-black transition delay-150 duration-300 ease-in-out '>
         {release_date ? release_date.split('-')[0] : 'N/A' }
       </p>
