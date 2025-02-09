@@ -1,7 +1,7 @@
 
 #Fillum
 
-A basic Movie Recommendation Webapp using Recommendation (WIP) ᕦ(ò_óˇ)ᕤ
+A basic Movie Recommendation Webapp using React ⚛️ (WIP) ᕦ(ò_óˇ)ᕤ
 
 
 ## Demo
