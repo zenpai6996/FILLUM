@@ -25,6 +25,7 @@
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
     background: #030014;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -41,6 +42,7 @@
 
   header {
     @apply sm:mt-10 mt-5;
+    
   }
 
   header img {

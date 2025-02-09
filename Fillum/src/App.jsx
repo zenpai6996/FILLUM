@@ -85,9 +85,27 @@ const App = () => {
         <main>
             <div className="pattern"/>
             <div className="wrapper">
-                <header>
-                    <img src="./hero.png" alt="Hero Banner"/>
-                    <h1 className="transition-transform duration-300 hover:scale-105 ease-out">Find the <span className="text-gradient ">Movies</span> you want</h1>
+                <header className="relative flex flex-col items-center justify-center min-h-screen ">
+                <div className="relative flex items-center justify-center w-full h-40 mb-8">
+    {trendingMovies.slice(0, 5).map((movie, index) => (
+        <React.Fragment key={movie.$id}>
+            <img
+                className={`absolute mt-10 w-30 sm:w-34 md:w-38 lg:w-42 xl:w-46 rounded-lg shadow-lg transition-transform duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer ${
+                    index === 0 ? '-rotate-10 -translate-x-[90%]' : 
+                    index === 1 ? 'rotate-0 translate-x-0 z-15' : 
+                    'rotate-10 translate-x-[90%]'
+                }`}
+                src={movie.poster}
+                alt={movie.title}
+            />
+        </React.Fragment>
+    ))}
+</div>
+
+                        <h1 className=" mt-15 text-8xl font-bold transition-transform duration-300 hover:scale-105 ease-out text-center text-gradient">Fillum</h1>
+                        <h1 className="mt-5 text-3xl font-bold transition-transform duration-300 hover:scale-105 ease-out text-center">
+                        Find the <span className="text-gradient">Movies</span> you want
+                        </h1>
                 <Search searchTerm={SearchTerm} setSearchTerm={setSearchTerm}/>
                 </header>
 
