@@ -25,6 +25,7 @@
     font-family: "DM Sans", serif;
     font-optical-sizing: auto;
     background: #030014;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -41,6 +42,7 @@
 
   header {
     @apply sm:mt-10 mt-5;
+    
   }
 
   header img {
@@ -49,9 +51,15 @@
 }
 
 @layer components {
+
+  /* .hero-bg {
+    @apply bg-[url('/hero-bg.png')] bg-cover bg-center w-screen h-screen relative overflow-hidden m-0 p-0;
+  } */
+
   .pattern {
-    @apply bg-hero-pattern w-screen h-screen bg-center bg-cover absolute z-0;
+    @apply bg-hero-pattern w-full h-full min-h-screen absolute top-0 left-0 bg-cover bg-center ;
   }
+  
 
   .wrapper {
     @apply px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative z-10;
@@ -102,14 +110,14 @@
   }
 
   .movie-card {
-    @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
+    @apply bg-[#391691]  p-5 rounded-2xl shadow-inner shadow-light-100/10 cursor-pointer transition delay-150 duration-100 ease-in-out hover:-translate-y-0.5 hover:scale-105 hover:bg-[#AB8BFF] ;
 
     & img {
       @apply rounded-lg h-auto w-full;
     }
 
     & h3 {
-      @apply text-white font-bold text-base line-clamp-1;
+      @apply text-white font-bold text-base line-clamp-1 ;
     }
 
     & .content {
